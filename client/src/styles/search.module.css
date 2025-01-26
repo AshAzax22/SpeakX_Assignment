@@ -89,3 +89,26 @@
   background-color: #ffffff;
   color: rgb(0, 0, 0);
 }
+
+@media (max-width: 768px) {
+  .container {
+    height: 100dvh;
+    width: 100dvw;
+  }
+
+  .subContainer {
+    flex-direction: column;
+  }
+
+  .searchBar {
+    width: 100%;
+  }
+
+  .questions {
+    height: 60dvh;
+  }
+
+  .pagination {
+    width: 90%;
+  }
+}
