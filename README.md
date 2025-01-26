@@ -34,24 +34,58 @@ Ensure you have the following installed on your system:
 - Node.js (vX.X.X or higher)
 - npm (vX.X.X or higher)
 
-### Steps
-1. Clone the repository:
-   git clone https://github.com/AshAzax22/SpeakX_Assignment.git
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/SpeakX_Assignment.git
+    ```
 
-2. Move to the repository
-   cd SpeakX_Assignment
+2. **Navigate to the server directory**:
+    ```bash
+    cd SpeakX_Assignment/server
+    ```
 
-3. Install Server Dependencies
-   cd server
-   npm i
+3. **Install the dependencies**:
+    ```bash
+    npm install
+    ```
 
-4. Start the server, it will be running on 3000 by default, can be changed with a PORT env variable
-   npm start
-   
-5. Move to client folder and install dependencies, it's a vite based project
-   cd ../client
-   npm i
+4. **Set up environment variables**:
+    - Create a `.env` file in the server directory.
+    - Add the MongoDB URI to the `.env` file. For example:
+        ```
+        MONGO_URI=your_mongo_uri
+        ```
 
-6. Run the Client and visit the fronend at port 5174 as instructed on the terminal
-   npm run dev
+5. **Run database migrations** (if applicable):
+    ```bash
+    npx knex migrate:latest
+    ```
 
+6. **Start the server**:
+    ```bash
+    npm start
+    ```
+
+### Client Setup
+
+1. **Navigate to the client directory**:
+    ```bash
+    cd ../client
+    ```
+
+2. **Install the dependencies**:
+    ```bash
+    npm install
+    ```
+
+3. **Set up environment variables**:
+    - Create a `.env` file in the client directory.
+    - Add the server API URL to the `.env` file. For example:
+        ```
+        VITE_API_URL=http://localhost:3000
+        ```
+
+4. **Start the development server**:
+    ```bash
+    npm run dev
+    ```
