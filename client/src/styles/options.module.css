@@ -1,0 +1,16 @@
+.option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.option:hover {
+  border: 1px solid #003cff;
+}

@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95dvh;
+  width: 95dvw;
+  gap: 16px;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBar {
+  width: 450px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.searchBar .searchInput {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0px 0px 5px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.searchBar .searchButton {
+  padding: 10px 20px;
+  border-radius: 0px 5px 5px 0px;
+  background-color: #003cff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100dvw;
+  gap: 16px;
+  height: 70dvh;
+  overflow: scroll;
+  padding: 16px;
+}
+.questions::-webkit-scrollbar {
+  display: none; /* WebKit browsers */
+}
+
+.filterDropdown {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.filterDropdown:active {
+  border: 1px solid #ccc;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+}
+
+.pagination button {
+  padding: 8px 24px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination button:hover {
+  background-color: #003cff;
+  color: white;
+}
+.pagination button:active {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}

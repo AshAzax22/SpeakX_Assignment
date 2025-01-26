@@ -1,0 +1,26 @@
+.readAlong {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  color: black;
+  background-color: white;
+  width: 60%;
+  gap: 10px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.questionType {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #aaaaaa;
+}
+
+.questionTitle {
+  width: 80%;
+  font-size: 16px;
+  margin-bottom: 16px;
+}

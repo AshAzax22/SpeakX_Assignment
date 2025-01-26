@@ -1,0 +1,31 @@
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.block:hover {
+  border: 1px solid #003cff;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox.checked {
+  background-color: #0034df;
+  border: none;
+}
