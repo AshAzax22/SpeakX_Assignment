@@ -26,7 +26,6 @@ const Anagram = ({ question }) => {
   };
 
   const getCorrectnessPercentage = () => {
-    console.log(correctness);
     const length = Math.max(solution.length, submittedSolution.trim.length);
     let correctChars = 0;
     for (let i = 0; i < length; i++) {
@@ -38,7 +37,6 @@ const Anagram = ({ question }) => {
   };
 
   useEffect(() => {
-    console.log(submittedSolution);
     setCorrectness(getCorrectnessPercentage());
   }, [submittedSolution]);
 
